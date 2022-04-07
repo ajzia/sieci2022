@@ -121,12 +121,15 @@ Zwiększanie liczby pakietów wykonałam dla $10$ powtórzeń przy dodanych wart
 
 ##### Wykresy:
 - zmiana $T_{max}$:
+
   ![zwiększanie liczby pakietów, zmiana T](./plots/sym-diff-tmax.png).
 
 - zmiana $p$:
+
   ![zwiększanie liczby pakietów, zmiana p](./plots/sym-diff-p.png).
 
 - zmiana wielkości pakietu:
+
   ![zwiększanie liczby pakietów, zmiana T](./plots/sym-diff-m.png).
   
   Większa liczba przesyłanych pakietów może częściej powodować "zator" w sieci, czyli sprawić, że liczba przesyłanych pakietów jest większa od przepustowości.
@@ -137,12 +140,15 @@ Zmienna $i$ była w tym wypadku liczbą iteracji od $1$ do $10$.
 
 ##### Wykresy:
 - zmiana $T_{max}$:
+
   ![zwiększanie przepustowości krawędzi, zmiana T](./plots/c-diff-tmax.png).
 
 - zmiana $p$:
+
   ![zwiększanie przepustowości krawędzi, zmiana p](./plots/c-diff-p.png).
 
 - zmiana wielkości pakietu:
+
   ![zwiększanie przepustowości krawędzi, zmiana m](./plots/c-diff-m.png).
   
   Większa przepustowość oznacza, że możemy przesłać więcej pakietów przez tę krawędź. Dzięki temu zwiększa się nasza niezawodność sieci.
@@ -152,12 +158,15 @@ Przy dodawaniu krawędzi wykonałam $i = 10$ iteracji, dla każdej z nich jako l
 
 ##### Wykresy:
 - zmiana $T_{max}$:
+
   ![zwiększanie liczby krawędzi, zmiana T](./plots/edge-diff-tmax.png).
 
 - zmiana $p$:
+
   ![zwiększanie liczby krawędzi, zmiana p](./plots/edge-diff-p.png).
 
 - zmiana wielkości pakietu:
+
   ![zwiększanie liczby krawędzi, zmiana m](./plots/edge-diff-m.png).
   
   Dodawanie krawędzi pozytywnie wpływa na znajdowanie szybszych ścieżek między wierzchołkami, a zatem zwiększa się także niezawodność sieci.
