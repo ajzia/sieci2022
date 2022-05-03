@@ -38,7 +38,6 @@ module Utils
     return result
   end
 
-  # Maciuś
   function bits_to_bytes(bits::BitVector)::Vector{UInt8}
     if (length(bits) % 8 != 0) throw("Number of bits not a power of 8") end
     result = Vector{UInt8}(undef, 0)
@@ -49,7 +48,6 @@ module Utils
     return result
   end
 
-  # Maciuś
   function bytes_to_bits(num::UINTS, padding::Int=0)::BitVector
     return BitVector(digits(num, base=2, pad=padding) |> reverse)
   end
