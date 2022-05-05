@@ -210,7 +210,7 @@ Zatem program właściwie identyfikuje błędne ramki oraz je pomija.
 
 ##### 3.1 Wstęp
 
-Zadanie polegało na zasymulowaniu łącza między nadającymi węzłami. Za takie łącze miała nam posłużyć tablica, która określa przesyłane przez węzły pakiety. Została ona zrealizowana pod postacią tabicy tablic, która pokazuje, jakie pakiety znajdują się w odpowiednim segmencie.
+Zadanie polegało na zasymulowaniu łącza między nadającymi węzłami. Za takie łącze miała nam posłużyć tablica, która określa przesyłane przez węzły pakiety. Została ona zrealizowana pod postacią tablicy tablic, która pokazuje, jakie pakiety znajdują się w odpowiednim segmencie.
 
 Jednostką czasu w naszej symulacji jest iteracja, podczas której węzeł może:
 
@@ -231,11 +231,6 @@ W każdej iteracji
   - w takiej sytuacji dany węzeł zatrzymuje wysyłanie danych i rozsyła po sieci pakiet, który informuje inne węzły o kolizji
 
 Każdy pakiet musi mieć wystarczającą wielkość, aby w przypadku kolizji można było ją wykryć przed przesłaniem kolejnego pakietu, zatem możemy przyjąć tą wielkość jako dwukrotność długości naszego kabla. Musimy wtedy wykonać 2 \* **długość_kabla** kroków.
-
-W danym kroku symulacji:
-
-- propagujemy istniejące sygnały
-- sprawdzamy nadawanie z danych węzłów, tj. w razie potrzeby przerywamy nadawanie, rozpoczynamy nadawanie, kontynuujemy nadawanie, albo każemy węzłowi dalej czekać, zanim zacznie nadawać.
 
 ##### 3.2 Przebieg symulacji
 
